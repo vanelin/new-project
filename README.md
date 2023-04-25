@@ -19,4 +19,19 @@ git branch -M main
 git remote add origin git@github.com:vanelin/new-project.git
 git push -u origin main
 ```
+### Create a new branch called "development" and switch to it using the following command:
+```bash
+git checkout -b development main
+vi README.md # change or add text
+git add README.md
+git commit -m "Add step-by-step instructions"
+git push origin development
+```
+This pushes the changes to the "development" branch on GitHub.
 
+### Once you're ready to merge the changes from the "development" branch to the "main" branch, switch back to the "main" branch using the following command:
+```bash
+git checkout main
+git merge development
+git push origin main
+```
